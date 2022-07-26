@@ -3,7 +3,9 @@ Description = Cncjs bed level
 After = network.target
 
 [Service]
-ExecStart = /home/pi/cncjs-bedlevel node . --port /dev/ttyUSB0 --config /home/pi/.cncjs/cncrc.cfg --socket-port 80
+User=pi
+ExecStart = /usr/bin/node /home/pi/cncjs-bedlevel . --port /dev/ttyUSB0 --config /home/pi/.cncjs/cncrc.cfg --socket-port 80
+Restart=on-failure
 
 [Install]
 WantedBy = multi-user.target
