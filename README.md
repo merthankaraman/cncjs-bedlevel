@@ -7,10 +7,9 @@ It will probe the surface (within gcode boundaries (xmin,ymin) - (xmax,ymax)) an
 ## Install and run
 
 ```bash
-git clone https://github.com/kreso-t/cncjs-kt-ext.git
-cd cncjs-kt-ext
-npm install
-node . --port /dev/ttyACM0
+git clone https://github.com/merth4n/cncjs-bedlevel.git
+cd cncjs-bedlevel
+bash install.sh
 ```
 
 Once started it will (by default) connect to local cncjs server and register it self for listening and sending commands (similar way as i.e. cncjs keyboard pendant).
