@@ -7,7 +7,7 @@ It will probe the surface (within gcode boundaries (xmin,ymin) - (xmax,ymax)) an
 ## Install and run
 
 ```bash
-git clone https://github.com/merth4n/cncjs-bedlevel.git
+git clone https://github.com/merthankaraman/cncjs-bedlevel.git
 cd cncjs-bedlevel
 bash install.sh
 ```
